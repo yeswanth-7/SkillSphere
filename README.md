@@ -39,17 +39,20 @@ SkillSphere is a robust backend solution for a modern course-selling platform. I
 
 ## 📂 Project Structure
 
-```
 SkillSphere
 ├── Middleware
-│   └── user.js               # Middleware for user authentication
-├── db.js                      # Database schemas and connection
+│   ├── user.js                 # Middleware for user authentication
+│   └── admin.js                # Middleware for admin authentication (added as per your context)
+├── db.js                        # Database schemas and connection
 ├── routes
-│   └── user.js                # User-related routes
-├── config.js                  # Secret keys and environment configurations
-├── server.js                  # Entry point of the application
-├── package.json               # Project dependencies and scripts
-```
+│   ├── user.js                 # User-related routes
+│   ├── course.js               # Course-related routes
+│   └── admin.js                # Admin-related routes (added as per your context)
+├── config.js                    # Secret keys and environment configurations
+├── server.js                    # Entry point of the application
+├── package.json                 # Project dependencies and scripts
+└── index.js                     # Main entry file for routing and setup (added outside of middleware and routes)
+
 
 ---
 
